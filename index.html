@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="bg-primary">
+    <div class="bg-primary px-5">
         <header class='flex py-4 px-4 sm:px-10 tracking-wide relative z-50'>
             <div class='flex flex-wrap items-center justify-between gap-5 w-full'>
                 <a href="/">
@@ -84,40 +84,44 @@
                 </p>
             </div>
         </section>
-    </div>
 
-
-    <!-- <div class="flex w-full py-4 px-4 sm:px-10 mb-6 px-4">
-        <div class="mx-auto max-w-6xl shadow-lg p-3 md:p-8 relative w-full bg-white rounded-md">
+        <div class="mx-auto max-w-6xl tranlate shadow-lg p-3 md:p-8 relative w-full bg-white rounded-md">
             <h2 class="text-lg font-semibold font-titillium-web">Loan Calculator</h2>
             <form class="mt-8 flex flex-row items-stretch flex-wrap">
                 <div class="px-1 w-full md:w-2/5">
                     <div
-                        class="w-full form_field border-gray-300 border rounded-md mt-2 p-3 flex-col flex items-stretch">
-                        <label for="" class="mb-2 font-titillium-web font-semibold text-xws">Enter Amount of
-                            Loan</label>
-                        <div class="flex flex-row">
+                        class="w-full form_field border-gray-300 border rounded-md mt-2 px-3 py-[1rem] flex-col flex items-stretch">
+                        <label for="" class="mb-2 font-titillium-web font-semibold text-xws">Transfer amount</label>
+                        <div class="flex  items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
                                 stroke="currentColor" class="size-5">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                             </svg>
-                            <input type="number" name="required_amount" id="required_amount"
-                                class="text-right flex-1 outline-none" value="10000" />
+                            <input type="number" name="required_amount" id="required_amount" class=" pl-3 font-bold"
+                                value="70000" />
                         </div>
                     </div>
                 </div>
                 <div
                     class="w-full md:w-3/5 px-1 space-x-0 sm:space-x-2 mt-2 flex sm:flex-row flex-col form_field items-stretch">
                     <div class="w-full sm:w-1/2 flex flex-col p-3 border-gray-300 border rounded-md ">
-                        <label for="" class="font-semibold font-titillium-web text-sx">Loan Term (Years)</label>
-                        <input type="number" name="required_amount" id="required_amount"
-                            class="text-start flex-1 outline-none" value="0" />
+                        <label for="" class="mb-2 font-semibold font-titillium-web text-sx">Sender currency</label>
+                        <div class="flex  items-center">
+                            <img src="./assets/images/united-states.png" class="w-8 h-8  rounded-full " alt="">
+                            <input type="number" name="required_amount" id="required_amount" class=" pl-3  font-bold"
+                                value="1000" />
+                        </div>
+                        <!-- <input type="number" name="required_amount" id="required_amount"
+                            class="text-start flex-1 outline-none" value="0" /> -->
                     </div>
                     <div class="w-full mt-2 sm:mt-0 sm:w-1/2 flex flex-col border-gray-300 p-3 border rounded-md ">
-                        <label for="" class=" font-semibold font-titillium-web text-sx">Loan Term (Month)</label>
-                        <input type="number" name="required_amount" id="required_amount"
-                            class="text-start flex-1 outline-none" value="0" />
+                        <label for="" class="mb-2 font-semibold font-titillium-web text-sx">Receivers currency</label>
+                        <div class="flex  items-center">
+                            <img src="./assets/images/canada.png" class="w-8 h-8 rounded-full " alt="">
+                            <input type="number" name="required_amount" id="required_amount" class=" pl-3  font-bold"
+                                value="500" />
+                        </div>
                     </div>
                 </div>
                 <div class="my-2 w-full lg:w-1/2 flex flex-row flex-wrap">
@@ -146,9 +150,9 @@
                 <div
                     class="my-2 w-full lg:w-1/2 bg-gray-100 px-1 md:space-x-2 mt-2 px-4 flex flex-row flex-wrap md:flex-nowrap form_field items-center">
                     <div class="w-full md:w-1/2 flex flex-col items-center p-3 rounded-md ">
-                        <label for="" class="font-semibold font-titillium-web text-sx">Loan Term (Years)</label>
+                        <label for="" class="font-semibold font-titillium-web text-sx">Total Amount</label>
                         <p type="number" name="required_amount" id="required_amount"
-                            class="text-start flex-1 outline-none bg-transparent text-2xl font-semibold">76,4000</p>
+                            class="text-start flex-1 outline-none bg-transparent text-2xl font-semibold">10,000 CAD</p>
                     </div>
                     <div class="w-full md:w-1/2">
                         <button type='button'
@@ -159,9 +163,12 @@
                 </div>
             </form>
         </div>
-    </div> -->
 
-    <div class="flex flex-wrap items-center py-20">
+
+    </div>
+
+
+    <!-- <div class="flex flex-wrap items-center py-20">
         <div class="w-full md:w-1/2 p-10">
             <h1 class="text-red-500 text-5xl mb-6 font-semibold">Transfer you Money</h1>
             <p class="text-lg mb-10">
@@ -268,22 +275,105 @@
             </div>
         </div>
 
+    </div> -->
+
+    <section class="section-second px-10 container grid md:grid-cols-2 mt-10 mx-auto overflow-hidden">
+        <div class="w-full  p-10">
+            <img src="./assets/images/mobile.png" alt="">
+
+
+        </div>
+        <div>
+            <h1 class=" text-5xl mt-[150px] leading-normal mb-6 font-semibold">We Deliver Modern And <br><span
+                    class="bg-orange-300 p">Advance</span> Features
+            </h1>
+            <h5 class="font-bold mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis culpa nobis, libero labore
+                reprehenderit modi, nam quisquam natus, exercitationem quidem tenetur rem amet. Accusamus facilis
+                tempore a exercitationem facere? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+                commodi nisi voluptas tenetur animi quis adipisci qui, asperiores eaque ab iste veniam numquam itaque,
+                delectus nesciunt, architecto labore quos est!</p>
+        </div>
+
+    </section>
+    <section class="section-third px-10 container grid md:grid-cols-2 mt-10 mx-auto overflow-hidden">
+
+        <div>
+            <h1 class=" text-5xl mt-[150px] leading-normal mb-6 font-semibold">can <span class="bg-orange-300 p"> Both
+                    Work </span> chat<br>& Video Call
+            </h1>
+            <h5 class="font-bold mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis culpa nobis, libero labore
+                reprehenderit modi, nam quisquam natus, exercitationem quidem tenetur rem amet. Accusamus facilis
+                tempore a exercitationem facere? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+                commodi nisi voluptas tenetur animi quis adipisci qui, asperiores eaque ab iste veniam numquam itaque,
+                delectus nesciunt, architecto labore quos est!</p>
+        </div>
+        <div class="w-full  p-10">
+            <img src="./assets/images/mobile.png" alt="">
+
+
+        </div>
+    </section>
+
+
+
+    <div class="section-fourt px-10 container grid md:grid-cols-3 gap-4 mx-auto">
+        <div class="card1 bg-blue-400 mr-5 w-full rounded-lg shadow-lg p-3  text-center ">
+            <h5 class="font-bold text-2xl ">Learn More about our <br> Guid line</h5>
+            <i class="my-5"> icon</i>
+            <hr>
+            <p class="my-5">Feel free to Use this theme</p>
+        </div>
+        <div class="card1 bg-blue-400 mr-5 w-full rounded-lg shadow-lg p-3 text-center ">
+            <h5 class="font-bold text-2xl ">Develop the Best Strategy <br> For Business</h5>
+            <i class="my-5"> icon</i>
+            <hr>
+            <p class="my-5">Feel free to Use this theme</p>
+        </div>
+        <div class="card1 bg-blue-400 mr-5 w-full rounded-lg shadow-lg p-3 text-center ">
+            <h5 class="font-bold text-2xl ">UX/Ui design and <br>Development</h5>
+            <i class="my-5"> icon</i>
+            <hr>
+            <p class="my-5">Feel free to Use this theme</p>
+        </div>
+        <div class="card1 bg-blue-400 mr-5 w-full rounded-lg shadow-lg p-3  text-center ">
+            <h5 class="font-bold text-2xl ">Learn More about our <br> Guid line</h5>
+            <i class="my-5"> icon</i>
+            <hr>
+            <p class="my-5">Feel free to Use this theme</p>
+        </div>
+        <div class="card1 bg-blue-400 mr-5 w-full rounded-lg shadow-lg p-3 text-center ">
+            <h5 class="font-bold text-2xl ">Develop the Best Strategy <br> For Business</h5>
+            <i class="my-5"> icon</i>
+            <hr>
+            <p class="my-5">Feel free to Use this theme</p>
+        </div>
+        <div class="card1 bg-blue-400 mr-5 w-full rounded-lg shadow-lg p-3 text-center ">
+            <h5 class="font-bold text-2xl ">UX/Ui design and <br>Development</h5>
+            <i class="my-5"> icon</i>
+            <hr>
+            <p class="my-5">Feel free to Use this theme</p>
+        </div>
     </div>
 
 
 
     <div class="bg-purple-50 mb-16 py-20 px-4 text-[#333] font-[sans-serif]">
         <div class="max-w-4xl w-full mx-auto text-center">
-          <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-[45px]">Subscribe Our Newsletter</h2>
-          <p class="text-base">Stay updated with our latest news and exclusive offers. Join our community today!</p>
-          <div class="mt-10 bg-white flex items-center sm:p-4 p-2 max-w-xl mx-auto rounded-2xl border border-gray-300">
-            <input type="email" placeholder="Enter your email" class="w-full bg-transparent py-4 px-2 text-[#333] text-base border-none outline-none" />
-            <button class="bg-gray-700 hover:bg-gray-800 text-white text-base font-semibold py-4 px-4 sm:px-8 rounded-2xl focus:outline-none">
-              Subscribe
-            </button>
-          </div>
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-[45px]">Subscribe Our Newsletter</h2>
+            <p class="text-base">Stay updated with our latest news and exclusive offers. Join our community today!</p>
+            <div
+                class="mt-10 bg-white flex items-center sm:p-4 p-2 max-w-xl mx-auto rounded-2xl border border-gray-300">
+                <input type="email" placeholder="Enter your email"
+                    class="w-full bg-transparent py-4 px-2 text-[#333] text-base border-none outline-none" />
+                <button
+                    class="bg-gray-700 hover:bg-gray-800 text-white text-base font-semibold py-4 px-4 sm:px-8 rounded-2xl focus:outline-none">
+                    Subscribe
+                </button>
+            </div>
         </div>
-      </div>
+    </div>
 
 
     <div class="bg-gray-800 w-full">
@@ -409,8 +499,8 @@
 
     <footer class="bg-gray-900 text-gray-300 py-6 px-16 font-sans tracking-wide">
         <div class="flex justify-between items-center max-lg:flex-col text-center flex-wrap gap-4">
-            <p class="text-[15px] leading-loose">© 2023<a href='/' target='_blank'
-                    class="hover:underline mx-1"></a>All Rights Reserved.</p>
+            <p class="text-[15px] leading-loose">© 2023<a href='/' target='_blank' class="hover:underline mx-1"></a>All
+                Rights Reserved.</p>
 
             <ul class="flex space-x-6 gap-y-2 max-lg:justify-center flex-wrap">
                 <li><a href="javascript:void(0)" class="text-[15px] hover:text-white">Terms of Service</a></li>

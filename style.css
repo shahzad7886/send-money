@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 :root {
-  --primary: #FAE0C9;
+  --primary: #fae0c9;
 }
 
 body {
@@ -14,10 +14,10 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   /* font-family: "Titillium Web", sans-serif; */
 }
-.header{
+.header {
   height: 100px;
 }
-.hero_section{
+.hero_section {
   min-height: 100vh;
   background: none;
   background-position: center right;
@@ -28,24 +28,34 @@ body {
   justify-content: start;
   z-index: 1000;
 }
-.sub-heading{
+.sub-heading {
   position: relative;
 }
-.sub-heading::before{
+.sub-heading::before {
   position: absolute;
   left: 0;
   right: 0;
   height: 100%;
   width: 4px;
-  background-color: #EF4444;
+  background-color: #ef4444;
   content: "";
   top: 0;
 }
+.tranlate {
+  transform: translate(10px, 65px);
+}
 
+input:focus-visible {
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
 @media screen and (min-width: 768px) {
-  .hero_section{
+  .hero_section {
     min-height: 100vh;
-    background: url('./img/hero-bg.png') no-repeat;
+    background: url("./img/hero-bg.png") no-repeat;
     background-position: center right;
     background-size: auto;
     height: 100%;
@@ -56,9 +66,9 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .hero_section{
+  .hero_section {
     min-height: 100vh;
-    background: url('./img/hero-bg.png') no-repeat;
+    background: url("./img/hero-bg.png") no-repeat;
     background-position: center right;
     background-size: contain;
     height: 100%;
@@ -67,4 +77,3 @@ body {
     justify-content: start;
   }
 }
-
